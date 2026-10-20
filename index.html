@@ -41,7 +41,7 @@
   "@context": "https://schema.org",
   "@type": "Event",
   "name": "Розыгрыш 3 сертификатов на отдых от Омсктур",
-  "startDate": "2026-11-15T13:05:00+03:00",
+  "startDate": "2026-10-30T14:55:00+03:00",
   "eventStatus": "https://schema.org/EventScheduled",
   "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
   "location": { "@type": "VirtualLocation", "url": "https://max.ru/id503501079307_1_bot?startapp=TL1c3187b4490a0" },
@@ -112,6 +112,8 @@ h1,h2,h3{font-weight:500;line-height:1.15;color:var(--primary)}
 .logo{display:flex;flex-direction:column;line-height:1.05;color:#fff;font-weight:500;text-transform:uppercase}
 .logo b{font-size:15px;letter-spacing:.6px}
 .logo b::first-letter{font-size:20px}
+.logo b span::first-letter{font-size:20px}
+.logo b .cap{font-size:20px}
 .logo small{font-size:12px;font-weight:400;color:rgba(255,255,255,.9);letter-spacing:1.6px;margin-top:2px}
 .logo small::first-letter{font-size:15px}
 .header__phone{display:flex;align-items:center;gap:8px;font-weight:500;font-size:15px;color:#fff}
@@ -350,8 +352,7 @@ details p{margin-top:12px;color:var(--muted);font-size:15px}
 <header class="header">
   <div class="wrap header__in">
     <a class="logo" href="https://www.omsktour.ru" target="_blank" rel="noopener">
-      <b>Ехать <span>Отдыхать</span></b>
-      <small>с Омсктур</small>
+      <b><span class="cap">Е</span>хать <span class="cap">О</span>тдыхать</b>
     </a>
     <a class="header__phone" href="tel:+73812433838">
       <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
@@ -366,9 +367,9 @@ details p{margin-top:12px;color:var(--muted);font-size:15px}
   <!-- ГЕРОЙ -->
   <section class="hero">
     <div class="wrap hero__in">
-      <div class="badge"><i></i> Розыгрыш среди подписчиков</div>
+      <div class="badge"><i></i>Ежемесячный розыгрыш среди подписчиков</div>
       <h1>Дарим 3 сертификата<br>на отдых по <em>10 000 ₽</em></h1>
-      <p class="hero__sub">Подпишитесь на наш канал в МАКС — участвуйте в розыгрыше и выигрывайте сертификаты на тур вашей мечты.</p>
+      <p class="hero__sub">Подпишись на наш канал в МАКС — участвуй в розыгрыше и выиграй сертификаты на тур твоей мечты.</p>
 
       <div class="hero__amount">
         <div class="chip"><b><span class="count" data-count-to="3">3</span> шт.</b><span>сертификатов</span></div>
@@ -376,7 +377,7 @@ details p{margin-top:12px;color:var(--muted);font-size:15px}
         <div class="chip"><b>0 ₽</b><span>стоимость участия</span></div>
       </div>
 
-      <div class="timer-label" id="timer1-label">До начала следующего розыгрыша осталось:</div>
+      <div class="timer-label" id="timer1-label">До определения победителей осталось:</div>
       <div class="timer" id="timer" aria-live="polite">
         <div class="timer__cell"><b id="t-d">00</b><span>дней</span></div>
         <div class="timer__cell"><b id="t-h">00</b><span>часов</span></div>
@@ -392,7 +393,6 @@ details p{margin-top:12px;color:var(--muted);font-size:15px}
         <div class="hero__note">Это бесплатно · Займёт 10 секунд</div>
       </div>
     </div>
-    <div class="scroll-hint"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg> узнать, как участвовать</div>
   </section>
 
   <!-- КУДА ПОТРАТИТЬ -->
@@ -424,7 +424,7 @@ details p{margin-top:12px;color:var(--muted);font-size:15px}
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"/><path d="M21 16v2a4 4 0 0 1-4 4h-5"/></svg>        <span><b>Консультация менеджера — бесплатно.</b> Поможем подобрать тур и подскажем, как выгоднее применить сертификат.</span>
       </div>
 
-      <p class="use-proof reveal">Так уже поступили <b class="count" data-count-to="500">500</b> наших клиентов.</p>
+      <p class="use-proof reveal">Так уже поступили <b class="count" data-count-to="526">526</b> наших клиентов.</p>
     </div>
   </section>
 
@@ -454,7 +454,7 @@ details p{margin-top:12px;color:var(--muted);font-size:15px}
       </div>
 
        <div class="deadline reveal">
-         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2"/><path d="M5 3 2 6"/><path d="m22 6-3-3"/><path d="M6.38 18.7 4 21"/><path d="M17.64 18.67 19 21"/></svg> Успейте подписаться — поздние заявки не принимаются
+          Розыгрыш проводится ежемесячно — подписывайся
        </div>
     </div>
   </section>
@@ -464,7 +464,7 @@ details p{margin-top:12px;color:var(--muted);font-size:15px}
     <div class="wrap">
       <div class="section__head reveal">
         <h2>Призовой фонд</h2>
-        <p>3 сертификата «Ехать Отдыхать» — ими можно оплатить часть тура в Омсктур</p>
+        <p>3 сертификата — ими можно оплатить любую услугу в Омсктур</p>
       </div>
       <div class="prizes">
                 <div class="prize reveal">
@@ -496,18 +496,17 @@ details p{margin-top:12px;color:var(--muted);font-size:15px}
       <div class="reveal">
         <h2 style="font-size:clamp(24px,4vw,34px);margin-bottom:22px">Зачем подписываться на наш канал</h2>
         <ul>
-           <li><i>✓</i><span><b>Горящие туры и акции</b> — анонсируем первыми, только для подписчиков.</span></li>
-           <li><i>✓</i><span><b>Выгодные цены</b> — никаких скрытых платежей и доплат.</span></li>
+           <li><i>✓</i><span><b>Горящие туры и акции</b> — выбираем только лучшее для наших подписчиков.</span></li>
            <li><i>✓</i><span><b>Бесплатная консультация менеджера</b> — подберём тур под ваш сертификат и подскажем, как применить его выгоднее.</span></li>
            <li><i>✓</i><span><b>Полезные советы</b>: где нужна карта, а где наличные, как сэкономить и что взять с собой.</span></li>
            <li><i>✓</i><span><b>Честные отзывы</b> наших клиентов — без приукрас и фальши.</span></li>
         </ul>
          <div class="deadline" style="margin-top:24px">
-           Розыгрыш проходит <b>ежемесячно</b>
+           Розыгрыш проходит <b>каждый месяц</b>
          </div>
       </div>
       <div class="card-cta reveal">
-        <h3>Подпишитесь и участвуйте</h3>
+        <h3>Подпишись и участвуй</h3>
         <p>Один клик — и вы в списке участников розыгрыша 3 сертификатов по 10 000 ₽</p>
         <a class="btn btn-yellow btn-lg" href="https://max.ru/id503501079307_1_bot?startapp=TL1c3187b4490a0" data-track="card_subscribe">
           Открыть канал МАКС <span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
@@ -534,7 +533,7 @@ details p{margin-top:12px;color:var(--muted);font-size:15px}
         </details>
         <details class="reveal">
           <summary>Что такое сертификат «Ехать Отдыхать»?</summary>
-           <p>Электронный сертификат на 10 000 ₽, привязанный к вашему аккаунту. Им можно оплатить часть тура в Ехать отдыхать. Обменять сертификат на денежные средства нельзя.</p>
+           <p>Электронный сертификат на 10 000 ₽, привязанный к вашему аккаунту. Им можно оплатить часть тура в ООО "Омсктур". Обменять сертификат на денежные средства нельзя.</p>
         </details>
         <details class="reveal">
           <summary>Можно участвовать несколько раз?</summary>
@@ -561,27 +560,22 @@ details p{margin-top:12px;color:var(--muted);font-size:15px}
     </div>
   </section>
 
-  <!-- ПОДОБРАТЬ ТУР САМОСТОЯТЕЛЬНО -->
-  <section class="section" style="padding-bottom:0">
+    <!-- ПОДОБРАТЬ ТУР САМОСТОЯТЕЛЬНО -->
+  <section class="section" >
     <div class="wrap">
-      <div class="pick reveal">
-        <div class="pick__text">
-          <h3>Не заинтересовал тур? Подберите его сами</h3>
-          <p>На сайте Омсктур — сотни направлений и готовых туров. Выберите подходящий, а сертификат примените при оплате. Консультация менеджера — бесплатно.</p>
-        </div>
+      <div class="reveal" style="max-width:460px;margin:0 auto">
         <a class="btn btn-primary btn-lg" href="https://www.omsktour.ru/news/priglashaem_v_tg_kanal/" target="_blank" rel="noopener" data-track="site_pick_tour">
           Подобрать тур на omsktour.ru <span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
         </a>
       </div>
     </div>
-  </section>
+  </section>  
 
   <!-- ФИНАЛЬНЫЙ CTA -->
   <section class="section" style="padding-top:0">
     <div class="wrap">
       <div class="final reveal">
-        <h2>Не упустите свой 10 000 ₽</h2>
-         <p>Подписка бесплатна, а призов — 3. В каждом розыгрыше.</p>
+        <h2>Не упустите свои 10 000 ₽</h2>
         <a class="btn btn-yellow btn-lg" href="https://max.ru/id503501079307_1_bot?startapp=TL1c3187b4490a0" data-track="final_subscribe">
           Участвовать в розыгрыше <span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
         </a>
@@ -616,9 +610,9 @@ details p{margin-top:12px;color:var(--muted);font-size:15px}
   'use strict';
 
   var CHANNEL = "https:\/\/max.ru\/id503501079307_1_bot?startapp=TL1c3187b4490a0";
-  var DRAW_START_TS = 1794737100;
+  var DRAW_START_TS = 1793361300;
   var NEXT_DRAW_TS  = 1794776400;
-  var SHOW_NEXT_DRAW_COUNTER = true;
+  var SHOW_NEXT_DRAW_COUNTER = false;
   var UTM    = [];
   var MI     = "10094590";
 
